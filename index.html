@@ -1,0 +1,40 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="fouqui_c"> 
+
+		<title>Snake HTML5</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet/less" type="text/css" href="css/style.less">
+		<script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="js/snake.js"></script>
+	</head>
+	<body>
+		<div class="game_infos border_bottom">
+			<span class="align_left">Score : <span id="score"></span></span>
+			<span class="align_right">Level : <span id="level"></span></span>
+		</div>
+		<div id="game">
+			<canvas id="snake" width="500" height="500"></canvas>
+			<div id="msg"></div>
+		</div>
+		<div class="game_infos border_top">
+			<span class="align_left">You need <span id="points"></span> points to get to the next level.</span>
+			<span class="align_right">[<span id="time"></span>sec]</span>
+		</div>
+		<div id="controls">
+			<h1>Controls</h1>
+			<div class="hr"></div>
+			<ul>
+				<li><span class="icon">&#8592;</span>	= Right</li>
+				<li><span class="icon">&#8593;</span>	= Up</li>
+				<li><span class="icon">&#8594;</span>	= Left</li>
+				<li><span class="icon">&#8595;</span>	= Down</li>
+				<li><span class="icon">&#8629;</span>	= Start, Pause</li>
+			</ul>
+		</div>
+	</body>
+</html>

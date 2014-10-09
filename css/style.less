@@ -1,0 +1,91 @@
+@import "reset.css";
+@import url('http://fonts.googleapis.com/css?family=Electrolize');
+
+@green: #A4C78D;
+@black: #000000;
+@white: #FFFFFF;
+@gray:  #D4D4D4;
+
+* {
+	margin:0; padding:0;
+}
+
+html, body {
+	background-color: @white;
+	background-image: url('../img/bg.png');
+	font-family: 'Electrolize', sans-serif;
+	height:100%;
+	margin-top: 20px;
+	overflow: hidden;
+	width:100%;
+}
+
+#game {
+	position: relative;
+	margin: auto;
+	width: 500px;
+	canvas {
+		display: block;
+		margin: auto;
+		vertical-align: middle;
+	}
+	#msg {
+		color: @white;
+		font-weight: bold;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 250;
+		width: 500px;
+	}
+}
+
+.game_infos {
+	background-color: @green;
+	border: 1px solid @black;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	padding: 0 10px;
+	width: 478px;
+	
+	.align_left {
+		float: left;
+	}
+	.align_right {
+		float: right;
+	}
+}
+.border_top {
+	border-top: 0;
+}
+.border_bottom {
+	border-bottom: 0;
+}
+#controls {
+	background-color: @gray;
+	color: @black;
+	margin: 10px auto;
+	padding: 10px 0;
+	width: 500px;
+	h1 {
+		margin: 0;
+		padding: 0 10px;
+	}
+	li {
+		margin-bottom: 5px;
+		padding: 0 10px;
+	}
+	.icon {
+		display: inline-block;
+		width: 30px;
+	}
+	.hr {
+		background-color: @black;
+		height: 1px;
+		margin: 10px 0;
+	}
+}
+
+.clear { clear: both; }
